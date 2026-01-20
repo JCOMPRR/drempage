@@ -1,12 +1,7 @@
-import PromoBanner from "./components/PromoBanner";
-
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-pink-50">
-      <PromoBanner />
-      <h1 className="text-3xl font-semibold text-pink-700">
-        Tailwind funcionando ✨
-      </h1>
+    <div className="min-h-screen bg-black flex items-center justify-center">
+      <h1 className="text-5xl text-[#D4AD45] font-bold">Hola</h1>
     </div>
   );
 }
