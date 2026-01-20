@@ -7,12 +7,10 @@ export default function Navbar() {
     <header className="w-full bg-white border-b border-gray-200">
       <nav className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
-          {/* LOGO */}
           <div className="flex-shrink-0 text-xl font-semibold text-black">
             <span className="text-[#D4AD45]">Dra.</span> Elise
           </div>
 
-          {/* MENU DESKTOP */}
           <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-black">
             <li className="hover:text-[#D4AD45] transition">Inicio</li>
             <li className="hover:text-[#D4AD45] transition">Servicios</li>
@@ -20,7 +18,6 @@ export default function Navbar() {
             <li className="hover:text-[#D4AD45] transition">Nuestro Equipo</li>
           </ul>
 
-          {/* CTA DESKTOP */}
           <div className="hidden md:flex">
             <button className="bg-[#D4AD45] text-black px-5 py-2 rounded-md text-sm font-semibold hover:bg-[#B8932F] transition">
               Agenda Cita
