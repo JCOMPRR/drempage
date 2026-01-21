@@ -4,14 +4,14 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white border-b border-gray-200">
+    <header className="w-full bg-black border-gray-200">
       <nav className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0 text-xl font-semibold text-black">
+          <div className="flex-shrink-0 text-xl font-semibold text-white">
             <span className="text-[#D4AD45]">Dra.</span> Elise
           </div>
 
-          <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-black">
+          <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-white">
             <li className="hover:text-[#D4AD45] transition">Inicio</li>
             <li className="hover:text-[#D4AD45] transition">Servicios</li>
             <li className="hover:text-[#D4AD45] transition">Resultados</li>
@@ -26,7 +26,7 @@ export default function Navbar() {
 
           {/* BOTÓN MOBILE */}
           <button
-            className="md:hidden text-black"
+            className="md:hidden text-white"
             onClick={() => setOpen(!open)}
             aria-label="Abrir menú"
           >
@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* MENU MOBILE */}
         {open && (
           <div className="md:hidden pb-4">
-            <ul className="flex flex-col space-y-4 text-sm font-medium text-black">
+            <ul className="flex flex-col space-y-4 text-sm font-medium text-white item">
               <li className="hover:text-[#D4AD45]">Inicio</li>
               <li className="hover:text-[#D4AD45]">Servicios</li>
               <li className="hover:text-[#D4AD45]">Resultados</li>

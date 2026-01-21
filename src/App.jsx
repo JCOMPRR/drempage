@@ -1,7 +1,8 @@
 import PromoBanner from "./components/PromoBanner";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import SobreMi from "./components/SobreMi";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       {/* <PromoBanner /> */}
       <Navbar />
       <Hero />
+      <SobreMi />
       <Footer />
     </>
   );
