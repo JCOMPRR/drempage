@@ -6,7 +6,16 @@ export default function Footer() {
           <h3 className="text-white text-lg font-medium">
             Dra. Elise Monserrat
           </h3>
-          <p className="mt-2 text-sm">Medicina Estética</p>
+          <p className="mt-2 text-sm">Medicina General</p>
+          <p className=" text-sm">Universidad del Valle de Mexico</p>
+          <p className=" text-sm">Cedula Profesional 13645060</p>
+          <p className=" text-sm">
+            Medicina Regenerativa, Antienenvejecimiento y Estetica
+          </p>
+          <p className="text-sm">
+            COFEPRIS 2426012002A00113 <br />
+            Consulte a su médico de confianza
+          </p>
         </div>
 
         <div>
@@ -20,7 +29,8 @@ export default function Footer() {
           <p className="mt-2 text-sm">
             Tel:{" "}
             <a
-              href="tel:+520000000000"
+              href="https://wa.me/5216621881994?text=Hola%2C%20quisiera%20informaci%C3%B3n%20y%20disponibilidad%20para%20agendar%20una%20cita."
+              target="_blank"
               className="text-[#D4AD45] hover:underline"
             >
               +52 662 188 1994

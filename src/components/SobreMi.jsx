@@ -35,14 +35,14 @@ export default function SobreMi() {
           </h2>
 
           <p className="mt-6 text-gray-700 leading-relaxed">
-            La Dra. Elise Monserrat Rodriguez Rodriguez es médica general con enfoque en medicina
-            estética. Inició su práctica profesional en tratamientos estéticos
-            tras concluir la Licenciatura en Medicina General, priorizando
-            siempre la seguridad, la ética médica y resultados naturales. <br />{" "}
-            En octubre de 2020, abrió su consultorio de medicina estética en
-            Hermosillo, Sonora, donde brinda atención personalizada y
-            tratamientos diseñados de acuerdo con las necesidades de cada
-            paciente.
+            La Dra. Elise Monserrat Rodriguez Rodriguez es médica general con
+            enfoque en medicina estética. Inició su práctica profesional en
+            tratamientos estéticos tras concluir la Licenciatura en Medicina
+            General, priorizando siempre la seguridad, la ética médica y
+            resultados naturales. <br /> En octubre de 2020, abrió su
+            consultorio de medicina estética en Hermosillo, Sonora, donde brinda
+            atención personalizada y tratamientos diseñados de acuerdo con las
+            necesidades de cada paciente.
           </p>
 
           <div className="mt-6 text-sm text-gray-600">
@@ -51,12 +51,12 @@ export default function SobreMi() {
           </div>
 
           <a
-            href="./src/assets/documents/CEDULA-DRA-ELISE-MONSERRAT.pdf"
+            href="https://cedulaprofesional.sep.gob.mx/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 text-sm font-medium text-black underline hover:text-[#D4AD45] transition"
           >
-            Ver cédula profesional
+            Ver cédula profesional en portal oficial SEP
           </a>
         </div>
 

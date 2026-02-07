@@ -20,16 +20,22 @@ export default function Hero() {
           </h1>
 
           <h2 className="font-heading text-3xl text-white uppercase leading-tight">
-            Donde la elegancia se encuentra con la
+            Donde la elegancia se encuentra con la ciencia
           </h2>
 
           <p className="mt-4 text-white uppercase leading-tight">
-            Medicina estética, regenerativa y preventiva
+            Medicina General, Medicina Regenerativa, Antienvejecimiento y
+            Estética
           </p>
 
-          <button className="mt-8 bg-[#D4AD45] text-black px-10 py-4 rounded-full text-sm sm:text-base font-medium">
+          <a
+            href="https://wa.me/5216621881994?text=Hola%2C%20quisiera%20informaci%C3%B3n%20y%20disponibilidad%20para%20agendar%20una%20cita."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-8 bg-[#D4AD45] text-black px-10 py-4 rounded-full text-sm sm:text-base font-medium hover:bg-[#B8932F] transition"
+          >
             Agenda tu cita
-          </button>
+          </a>
         </div>
       </div>
     </section>

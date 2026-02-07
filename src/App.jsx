@@ -1,19 +1,25 @@
-import PromoBanner from "./components/PromoBanner";
-import Navbar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
-import SobreMi from "./components/SobreMi";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+
+import Home from "./pages/Home";
+import ProcedimientosMedicos from "./pages/ProcedimientosMedicos";
+
+export default function App() {
   return (
-    <>
-      {/* <PromoBanner /> */}
+    <BrowserRouter>
+      <ScrollToTop />
+
       <Navbar />
-      <Hero />
-      <SobreMi />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/botox" element={<ProcedimientosMedicos />} />
+      </Routes>
+
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
-
-export default App;
