@@ -35,13 +35,15 @@ export default function Servicios() {
             Servicios de Medicina Estética
           </h2>
           <p className="mt-4 text-gray-600 text-sm md:text-base">
-            Aplicación de toxina botulínica, Tratamientos faciales y corporales
+            Mira nuestra amplia gama de tratamientos faciales, corporales y
+            protocolos médicos diseñados para realzar tu belleza natural y
+            bienestar integral.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Link
-            to="/botox"
+            to="/protocolosMedicos"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
             <img
@@ -52,13 +54,13 @@ export default function Servicios() {
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
-                Botox
+                Protocolos Medicos
               </h3>
             </div>
           </Link>
 
-          <a
-            href="#faciales"
+          <Link
+            to="/tratamientosFaciales"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
             <img
@@ -72,9 +74,9 @@ export default function Servicios() {
                 Faciales
               </h3>
             </div>
-          </a>
-          <a
-            href="#corporales"
+          </Link>
+          <Link
+            to="/tratamientosCorporales"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
             <img
@@ -88,7 +90,7 @@ export default function Servicios() {
                 Corporales
               </h3>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

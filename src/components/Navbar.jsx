@@ -20,15 +20,15 @@ export default function Navbar() {
             <Link to="/" className="hover:text-[#D4AD45] transition">
               Inicio
             </Link>
-            <a className="hover:text-[#D4AD45] transition" href="">
+            <Link to="/servicios" className="hover:text-[#D4AD45] transition">
               Servicios
-            </a>
-            <a className="hover:text-[#D4AD45] transition" href="">
+            </Link>
+            <Link to="/resultados" className="hover:text-[#D4AD45] transition">
               Resultados
-            </a>
-            <a className="hover:text-[#D4AD45] transition" href="">
-              Nuestro Equipo
-            </a>
+            </Link>
+            {/* <Link to="/blog" className="hover:text-[#D4AD45] transition">
+              Blog
+            </Link> */}
           </ul>
 
           <div className="hidden md:flex">

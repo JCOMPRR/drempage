@@ -2,17 +2,19 @@ export default function ProcedimientosMedicos() {
   return (
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-12 text-center">
-          <h1 className="font-heading text-3xl md:text-4xl text-black">
+        {/* Header */}
+        <div className="mb-16 text-center">
+          <h1 className="font-heading text-3xl md:text-5xl text-black font-bold tracking-wide">
             Procedimientos Médicos
           </h1>
 
-          <p className="mt-4 text-sm text-gray-600 max-w-2xl mx-auto">
-            El costo del tratamiento puede variar según la recomendación médica,
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+            El tratamiento puede variar según la recomendación médica,
             valoración clínica y necesidades individuales del paciente.
           </p>
         </div>
 
+        {/* Categorías */}
         <Category title="Toxina Botulínica (Botox)">
           <Service
             title="Aplicación de toxina botulínica"
@@ -21,10 +23,6 @@ export default function ProcedimientosMedicos() {
           <Service
             title="Brotox"
             description="Aplicación de toxina botulínica diseñada para hombres, enfocada en mantener rasgos masculinos mientras se suavizan líneas de expresión."
-          />
-          <Service
-            title="Baby Botox"
-            description="Aplicación de microdosis de toxina botulínica para obtener resultados sutiles y naturales."
           />
           <Service
             title="Bunny Lines"
@@ -47,8 +45,8 @@ export default function ProcedimientosMedicos() {
             description="Técnica para mejorar el ángulo mandibular y cuello, generando un efecto visual de lifting."
           />
           <Service
-            title="Bruxismo"
-            description="Aplicación en músculo masetero para aliviar dolor mandibular, reducir hipertrofia muscular y estilizar el rostro."
+            title="Músculo masetero hipertrófico"
+            description="Aplicación en músculo masetero, reduce hipertrofia muscular y estiliza el rostro."
           />
           <Service
             title="Sonrisa gingival"
@@ -62,7 +60,7 @@ export default function ProcedimientosMedicos() {
             description="Tratamiento con ácido hialurónico para proyección, humectación, perfilado o aumento de volumen según cada paciente."
           />
           <Service
-            title="Aumento de mentón"
+            title="Proyeccion de mentón"
             description="Aplicación de ácido hialurónico para mejorar proyección y armonía facial."
           />
           <Service
@@ -112,9 +110,16 @@ export default function ProcedimientosMedicos() {
             title="Hidratación de labios"
             description="Tratamiento con dermapen o revitalizantes para mejorar textura e hidratación labial."
           />
+        </Category>
+
+        <Category title="Otros">
           <Service
-            title="Power Serum"
-            description="Administración intravenosa de líquidos, vitaminas y minerales para hidratación y bienestar general."
+            title="Retiro de verrugas"
+            description="Procedimiento seguro mediante cauterización eléctrica, previa valoración médica."
+          />
+          <Service
+            title="Revitalización de Piel (Skin Booster)"
+            description="Tratamiento poli-revitalizante con ácido hialurónico, vitaminas, aminoácidos y minerales."
           />
         </Category>
       </div>
@@ -122,24 +127,52 @@ export default function ProcedimientosMedicos() {
   );
 }
 
+// CATEGORY
 function Category({ title, children }) {
   return (
     <div className="mb-16">
-      <h2 className="font-heading text-2xl md:text-3xl text-black mb-8">
+      <h2 className="font-heading text-2xl md:text-3xl text-black mb-10 relative inline-block">
         {title}
+        <span className="absolute -bottom-2 left-0 w-16 h-[2px] bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-300 rounded-full"></span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">{children}</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {children}
+      </div>
     </div>
   );
 }
 
+// SERVICE CARD
 function Service({ title, description }) {
   return (
-    <div className="border border-gray-200 p-6 rounded-sm">
-      <h3 className="font-medium text-black">{title}</h3>
+    <div
+      className="
+      group
+      bg-white
+      border border-gray-200
+      rounded-2xl
+      p-7
+      shadow-sm
+      hover:shadow-xl
+      hover:border-yellow-500/40
+      transition-all duration-300
+    "
+    >
+      <h3 className="text-lg md:text-xl font-semibold text-black relative pb-3">
+        {title}
+        <span
+          className="
+          absolute bottom-0 left-0
+          w-10 h-[2px]
+          bg-gradient-to-r from-yellow-600 to-yellow-400
+          group-hover:w-16
+          transition-all duration-300
+        "
+        ></span>
+      </h3>
 
-      <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+      <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
         {description}
       </p>
     </div>

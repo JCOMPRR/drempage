@@ -2,14 +2,15 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300 py-12">
       <div className="max-w-7xl mx-auto px-6 grid gap-10 md:grid-cols-3">
+        {/* INFO DOCTORA */}
         <div>
           <h3 className="text-white text-lg font-medium">
             Dra. Elise Monserrat
           </h3>
           <p className="mt-2 text-sm">Medicina General</p>
-          <p className=" text-sm">Universidad del Valle de Mexico</p>
-          <p className=" text-sm">Cedula Profesional 13645060</p>
-          <p className=" text-sm">
+          <p className="text-sm">Universidad del Valle de Mexico</p>
+          <p className="text-sm">Cedula Profesional 13645060</p>
+          <p className="text-sm">
             Medicina Regenerativa, Antienenvejecimiento y Estetica
           </p>
           <p className="text-sm">
@@ -18,8 +19,10 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* UBICACION + REDES */}
         <div>
           <h4 className="text-white font-medium mb-2">Ubicación</h4>
+
           <p className="text-sm leading-relaxed">
             Av. Tehuantepec 114, El Centenario, 83260
             <br />
@@ -31,6 +34,7 @@ export default function Footer() {
             <a
               href="https://wa.me/5216621881994?text=Hola%2C%20quisiera%20informaci%C3%B3n%20y%20disponibilidad%20para%20agendar%20una%20cita."
               target="_blank"
+              rel="noopener noreferrer"
               className="text-[#D4AD45] hover:underline"
             >
               +52 662 188 1994
@@ -38,8 +42,45 @@ export default function Footer() {
           </p>
 
           <p className="mt-2 text-sm">Lunes a Viernes · 9:00 am – 6:00 pm</p>
+
+          {/* REDES SOCIALES */}
+          <div className="mt-5">
+            <h4 className="text-white font-medium mb-2">
+              Siguenos en nuestras Redes Sociales
+            </h4>
+
+            <div className="flex flex-wrap gap-4 text-sm">
+              <a
+                href="https://www.instagram.com/draelisemonserrat/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#D4AD45] transition"
+              >
+                Instagram
+              </a>
+
+              <a
+                href="https://www.facebook.com/people/Dra-Elise-Monserrat-Rodriguez/100041394078302/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#D4AD45] transition"
+              >
+                Facebook
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@draelisemonserrat?_r=1&_t=ZS-93vBCbdN0tc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#D4AD45] transition"
+              >
+                TikTok
+              </a>
+            </div>
+          </div>
         </div>
 
+        {/* MAPA */}
         <div>
           <h4 className="text-white font-medium mb-2">Cómo llegar</h4>
 
