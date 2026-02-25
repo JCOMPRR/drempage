@@ -6,17 +6,17 @@ const resultadosData = {
   "Tratamientos Médicos": [
     {
       id: 1,
-      image: "./src/assets/disminucion-lineas-expresion.jpg",
+      image: "public/disminucion-lineas-expresion.jpg",
       label: "Disminución de líneas de expresión",
     },
     {
       id: 4,
-      image: "./src/assets/disminucion-lineas-expresion-mujer.png",
+      image: "public/disminucion-lineas-expresion-mujer.png",
       label: "Disminución de líneas de expresión",
     },
     {
       id: 5,
-      image: "./src/assets/disminucion-lineas-expresion-dama.jpg",
+      image: "public/disminucion-lineas-expresion-dama.jpg",
       label: "Disminución de líneas de expresión",
     },
   ],
@@ -24,17 +24,17 @@ const resultadosData = {
   Faciales: [
     {
       id: 2,
-      image: "../src/assets/facial-mujer.png",
+      image: "public/facial-mujer.png",
       label: "Resultado Facial Platino",
     },
     {
       id: 6,
-      image:"../src/assets/facial-platino-mujer.png",
+      image:"public/facial-platino-mujer.png",
       label: "Resultado facial Plata",
     },
     {
       id: 7,
-      image:"../src/assets/facial-bronce-mujer.png",
+      image:"public/facial-bronce-mujer.png",
       label: "Resultado Facial Cobre",
     },
   ],
@@ -42,7 +42,7 @@ const resultadosData = {
   Corporales: [
     {
       id: 3,
-      image:"../src/assets/corporal-mujer.png",
+      image:"public/corporal-mujer.png",
       label: "Resultado de Radiofrecuencia",
     },
   ],

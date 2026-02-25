@@ -47,7 +47,7 @@ export default function Servicios() {
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
             <img
-              src="./src/assets/botox-card.jpg"
+              src="public/botox-card.jpg"
               alt="Aplicación de Botox en Hermosillo"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                md:group-hover:brightness-100 brightness-75"
@@ -64,7 +64,7 @@ export default function Servicios() {
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
             <img
-              src="./src/assets/facial-card.jpg"
+              src="public/facial-card.jpg"
               alt="Tratamientos faciales en Hermosillo"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                          md:group-hover:brightness-100 brightness-75"
@@ -80,7 +80,7 @@ export default function Servicios() {
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
             <img
-              src="./src/assets/corporal-card.jpg"
+              src="public/corporal-card.jpg"
               alt="Tratamientos corporales en Hermosillo"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                          md:group-hover:brightness-100 brightness-75"

@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img
-              src="/src/assets/logo-drem.svg"
+              src="public/logo-drem.svg"
               alt="DREM Medicina Estética"
               className="h-8 md:h-10 w-auto object-contain"
             />

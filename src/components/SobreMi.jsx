@@ -62,7 +62,7 @@ export default function SobreMi() {
 
         <div className="flex justify-center">
           <img
-            src="./src/assets/dra-elise.png"
+            src="public/dra-elise.png"
             alt="Dra. Elise Monserrat - Medicina Estética"
             className="w-full max-w-md object-cover rounded-sm"
           />
