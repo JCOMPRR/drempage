@@ -72,27 +72,38 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="md:hidden pb-4">
-            <ul className="flex flex-col space-y-4 text-sm font-medium text-white">
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-[#D4AD45]"
-                  onClick={() => setOpen(false)}
-                >
+          <div className="md:hidden pb-6 pt-4">
+            <ul className="flex flex-col items-center gap-6 text-sm font-medium text-white">
+              <li className="w-full text-center">
+                <Link to="/" className="block hover:text-[#D4AD45] transition">
                   Inicio
                 </Link>
               </li>
 
-              <li className="hover:text-[#D4AD45]">Servicios</li>
-              <li className="hover:text-[#D4AD45]">Resultados</li>
-              <li className="hover:text-[#D4AD45]">Nuestro Equipo</li>
-              <li>
+              <li className="w-full text-center">
+                <Link
+                  to="/servicios"
+                  className="block hover:text-[#D4AD45] transition"
+                >
+                  Servicios
+                </Link>
+              </li>
+
+              <li className="w-full text-center">
+                <Link
+                  to="/resultados"
+                  className="block hover:text-[#D4AD45] transition"
+                >
+                  Resultados
+                </Link>
+              </li>
+
+              <li className="w-full px-6">
                 <a
                   href="https://wa.me/5216621881994?text=Hola%2C%20quisiera%20informaci%C3%B3n%20y%20disponibilidad%20para%20agendar%20una%20cita."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center bg-[#D4AD45] text-black py-2 rounded-md font-semibold hover:bg-[#B8932F] transition"
+                  className="block w-full text-center bg-[#D4AD45] text-black py-3 rounded-full font-semibold hover:bg-[#B8932F] transition"
                 >
                   Agenda Cita
                 </a>
