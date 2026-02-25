@@ -6,6 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 // Navbar
 import Home from "./pages/Home";
+import PromoBanner from "./components/PromoBanner";
 import Servicios from "./components/Servicios";
 import Resultados from "./pages/Resultados";
 // import Blog from "./pages/Blog";
@@ -25,7 +26,8 @@ export default function App() {
       <ScrollToTop />
 
       <Navbar />
-
+      <PromoBanner />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicios" element={<Servicios />} />

@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
         heading: ["Trirong", "serif"],
+        birthstone: ["Birthstone", "cursive"],
       },
       animation: {
         fadeUp: "fadeUp 1.2s ease-out forwards",

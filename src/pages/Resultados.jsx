@@ -1,38 +1,148 @@
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { useState } from "react";
+
+const categorias = ["Tratamientos Médicos", "Faciales", "Corporales"];
+
+const resultadosData = {
+  "Tratamientos Médicos": [
+    {
+      id: 1,
+      image: "./src/assets/disminucion-lineas-expresion.jpg",
+      label: "Disminución de líneas de expresión",
+    },
+    {
+      id: 4,
+      image: "./src/assets/disminucion-lineas-expresion-mujer.png",
+      label: "Disminución de líneas de expresión",
+    },
+    {
+      id: 5,
+      image: "./src/assets/disminucion-lineas-expresion-dama.jpg",
+      label: "Disminución de líneas de expresión",
+    },
+  ],
+
+  Faciales: [
+    {
+      id: 2,
+      image: "../src/assets/facial-mujer.png",
+      label: "Resultado Facial Platino",
+    },
+    {
+      id: 6,
+      image:"../src/assets/facial-platino-mujer.png",
+      label: "Resultado facial Plata",
+    },
+    {
+      id: 7,
+      image:"../src/assets/facial-bronce-mujer.png",
+      label: "Resultado Facial Cobre",
+    },
+  ],
+
+  Corporales: [
+    {
+      id: 3,
+      image:"../src/assets/corporal-mujer.png",
+      label: "Resultado de Radiofrecuencia",
+    },
+  ],
+};
 
 export default function Resultados() {
+  const [categoriaActiva, setCategoriaActiva] = useState(categorias[0]);
+
   return (
     <div className="bg-white min-h-screen">
-      <Helmet>
-        <title>Resultados de tratamientos médicos estéticos | México</title>
-        <meta
-          name="description"
-          content="Galería de resultados de tratamientos médicos estéticos realizados en México. Antes y después de procedimientos faciales y corporales. Resultados reales de pacientes satisfechos."
-        />
-        <meta
-          name="keywords"
-          content="
-          resultados tratamientos medicina estética México,
-          resultados antes y después medicina estética,
-          resultados reales pacientes medicina estética,
-          resultados procedimientos faciales México,    
-          resultados tratamientos corporales México,    
-          resultados medicina estética Sonora,
-          resultados antes y después botox,
-          resultados antes y después faciales,
-          como se ve botox,
-          como se ve ácido hialurónico,
-          resultados antes y después ácido hialurónico
+      {/* HERO */}
+      <section className="max-w-6xl mx-auto px-6 pt-20 pb-10 text-center">
+        <p className="text-xs tracking-[0.35em] text-gray-400 uppercase">
+          Casos Clínicos
+        </p>
 
-          "
-        />
+        <h1 className="mt-6 text-4xl md:text-5xl font-bold text-black">
+          Resultados
+        </h1>
 
-        {/* SEO Local */}
-        <meta name="geo.region" content="MX-SON" />
-        <meta name="geo.placename" content="Sonora" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+        <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
+          Nuestros resultados dentro de protocolos médicos estéticos.
+          Cada caso requiere valoración médica individual.
+        </p>
+      </section>
+
+      {/* TABS */}
+      <section className="max-w-6xl mx-auto px-6 pb-10">
+        <div className="flex flex-wrap justify-center gap-3">
+          {categorias.map(cat => (
+            <button
+              key={cat}
+              onClick={() => setCategoriaActiva(cat)}
+              className={`px-6 py-2 rounded-full text-sm transition
+              ${
+                categoriaActiva === cat
+                  ? "bg-black text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      {/* GRID */}
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          {resultadosData[categoriaActiva].map(item => (
+            <div
+              key={item.id}
+              className="group bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300"
+            >
+              {/* IMAGE */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.label}
+                  className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700"
+                />
+
+                {/* Overlay elegante */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-transparent opacity-80" />
+
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="text-xs text-white/90 tracking-widest uppercase">
+                    Antes / Después
+                  </span>
+                </div>
+              </div>
+
+              {/* INFO */}
+              <div className="p-5">
+                <p className="text-sm text-gray-600">{item.label}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* DISCLAIMER */}
+      <section className="max-w-4xl mx-auto px-6 pb-20">
+        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-sm text-gray-600">
+          <p className="font-semibold text-black mb-2">
+            Información Importante
+          </p>
+
+          <p>
+            Imágenes con fines ilustrativos. Los resultados pueden variar según
+            características individuales, diagnóstico médico y protocolo
+            aplicado.
+          </p>
+
+          <p className="mt-2">
+            Todo procedimiento médico requiere valoración médica previa,
+            historia clínica completa y consentimiento informado.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
