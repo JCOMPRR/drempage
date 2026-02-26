@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
+import botoxCard from "../assets/botox-card.jpg";
+import facialCard from "../assets/facial-card.jpg";
+import corporalCard from "../assets/corporal-card.jpg";
+
 export default function Servicios() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -46,12 +50,7 @@ export default function Servicios() {
             to="/protocolosMedicos"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
-            <img
-              src="./src/assets/botox-card.jpg"
-              alt="Aplicación de Botox en Hermosillo"
-              className="absolute inset-0 w-full h-full object-cover transition duration-500
-               md:group-hover:brightness-100 brightness-75"
-            />
+            src={botoxCard}
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
                 Protocolos Medicos
@@ -63,12 +62,7 @@ export default function Servicios() {
             to="/tratamientosFaciales"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
-            <img
-              src="./src/assets/facial-card.jpg"
-              alt="Tratamientos faciales en Hermosillo"
-              className="absolute inset-0 w-full h-full object-cover transition duration-500
-                         md:group-hover:brightness-100 brightness-75"
-            />
+            src={facialCard}
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
                 Faciales
@@ -79,12 +73,7 @@ export default function Servicios() {
             to="/tratamientosCorporales"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
-            <img
-              src="./src/assets/corporal-card.jpg"
-              alt="Tratamientos corporales en Hermosillo"
-              className="absolute inset-0 w-full h-full object-cover transition duration-500
-                         md:group-hover:brightness-100 brightness-75"
-            />
+            src={corporalCard}
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
                 Corporales

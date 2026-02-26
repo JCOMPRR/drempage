@@ -1,4 +1,11 @@
 import { useState } from "react";
+import disminucion1 from "../assets/disminucion-lineas-expresion.jpg";
+import disminucion4 from "../assets/disminucion-lineas-expresion-mujer.png";
+import disminucion5 from "../assets/disminucion-lineas-expresion-dama.jpg";
+import facialMujer from "../assets/facial-mujer.png";
+import facialPlatinoMujer from "../assets/facial-platino-mujer.png";
+import facialBronceMujer from "../assets/facial-bronce-mujer.png";
+import corporalMujer from "../assets/corporal-mujer.png";
 
 const categorias = ["Tratamientos Médicos", "Faciales", "Corporales"];
 
@@ -6,17 +13,17 @@ const resultadosData = {
   "Tratamientos Médicos": [
     {
       id: 1,
-      image: "./src/assets/disminucion-lineas-expresion.jpg",
+      image: disminucion1,
       label: "Disminución de líneas de expresión",
     },
     {
       id: 4,
-      image: "./src/assets/disminucion-lineas-expresion-mujer.png",
+      image: disminucion4,
       label: "Disminución de líneas de expresión",
     },
     {
       id: 5,
-      image: "./src/assets/disminucion-lineas-expresion-dama.jpg",
+      image: disminucion5,
       label: "Disminución de líneas de expresión",
     },
   ],
@@ -24,17 +31,17 @@ const resultadosData = {
   Faciales: [
     {
       id: 2,
-      image: "../src/assets/facial-mujer.png",
+      image: facialMujer,
       label: "Resultado Facial Platino",
     },
     {
       id: 6,
-      image:"../src/assets/facial-platino-mujer.png",
+      image: facialPlatinoMujer,
       label: "Resultado facial Plata",
     },
     {
       id: 7,
-      image:"../src/assets/facial-bronce-mujer.png",
+      image: facialBronceMujer,
       label: "Resultado Facial Cobre",
     },
   ],
@@ -42,7 +49,7 @@ const resultadosData = {
   Corporales: [
     {
       id: 3,
-      image:"../src/assets/corporal-mujer.png",
+      image: corporalMujer,
       label: "Resultado de Radiofrecuencia",
     },
   ],
@@ -64,8 +71,8 @@ export default function Resultados() {
         </h1>
 
         <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
-          Nuestros resultados dentro de protocolos médicos estéticos.
-          Cada caso requiere valoración médica individual.
+          Nuestros resultados dentro de protocolos médicos estéticos. Cada caso
+          requiere valoración médica individual.
         </p>
       </section>
 
