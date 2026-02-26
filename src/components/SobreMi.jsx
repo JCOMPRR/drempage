@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import draElise from "./src/assets/dra-elise.png";
+import draElise from "../assets/dra-elise.png";
 
 export default function SobreMi() {
   const ref = useRef(null);
@@ -61,7 +61,13 @@ export default function SobreMi() {
           </a>
         </div>
 
-        <div className="flex justify-center">src={draElise}</div>
+        <div className="flex justify-center">
+          <img
+            src={draElise}
+            alt="Dra. Elise Monserrat Rodriguez Rodriguez"
+            className="w-64 h-64 object-cover rounded-full"
+          />
+        </div>
       </div>
     </section>
   );

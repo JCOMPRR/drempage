@@ -50,7 +50,11 @@ export default function Servicios() {
             to="/protocolosMedicos"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
-            src={botoxCard}
+            <img
+              src={botoxCard}
+              alt="Protocolos Médicos"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
                 Protocolos Medicos
@@ -62,7 +66,11 @@ export default function Servicios() {
             to="/tratamientosFaciales"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
-            src={facialCard}
+            <img
+              src={facialCard}
+              alt="Tratamientos Faciales"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
                 Faciales
@@ -73,7 +81,11 @@ export default function Servicios() {
             to="/tratamientosCorporales"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
-            src={corporalCard}
+            <img
+              src={corporalCard}
+              alt="Tratamientos Corporales"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
                 Corporales

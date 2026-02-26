@@ -10,7 +10,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            src={logo}
+            <img src={logo} alt="Logo Drem" className="h-10 w-auto" />
           </Link>
 
           <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-white">
