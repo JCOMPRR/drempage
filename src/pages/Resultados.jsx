@@ -60,7 +60,6 @@ export default function Resultados() {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* HERO */}
       <section className="max-w-6xl mx-auto px-6 pt-20 pb-10 text-center">
         <p className="text-xs tracking-[0.35em] text-gray-400 uppercase">
           Casos Clínicos
