@@ -60,12 +60,16 @@ export default function PromocionBanner() {
 
             <div className="p-8 text-center">
               <p className="text-xs tracking-[0.3em] text-gray-400 uppercase">
-                Promoción Vigente
+                Promoción Vigente del 26 al 28 de Febrero
               </p>
 
               <h2 className="mt-4 text-3xl font-semibold text-black font-birthstone">
                 ¡SHINE UP!
               </h2>
+
+              <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+                Cupo limitado a 15 lugares.
+              </p>
 
               <p className="mt-4 text-gray-600 text-sm leading-relaxed">
                 SkinBooster Full Face de $6,000 MXN a $5,400 MXN.
