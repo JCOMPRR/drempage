@@ -53,6 +53,7 @@ export default function Servicios() {
             <img
               src={botoxCard}
               alt="Protocolos Médicos"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                md:group-hover:brightness-100 brightness-75"
             />
@@ -70,6 +71,7 @@ export default function Servicios() {
             <img
               src={facialCard}
               alt="Tratamientos Faciales"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                md:group-hover:brightness-100 brightness-75"
             />
@@ -86,6 +88,7 @@ export default function Servicios() {
             <img
               src={corporalCard}
               alt="Tratamientos Corporales"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                md:group-hover:brightness-100 brightness-75"
             />

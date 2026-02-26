@@ -64,6 +64,7 @@ export default function SobreMi() {
         <div className="flex justify-center">
           <img
             src={draElise}
+            loading="lazy"
             alt="Dra. Elise Monserrat Rodriguez Rodriguez"
             className="w-full max-w-md object-cover rounded-sm"
           />
