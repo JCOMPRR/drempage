@@ -65,7 +65,7 @@ export default function SobreMi() {
           <img
             src={draElise}
             alt="Dra. Elise Monserrat Rodriguez Rodriguez"
-            className="w-64 h-64 object-cover rounded-full"
+            className="w-full max-w-md object-cover rounded-sm"
           />
         </div>
       </div>

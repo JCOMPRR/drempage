@@ -53,7 +53,8 @@ export default function Servicios() {
             <img
               src={botoxCard}
               alt="Protocolos Médicos"
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover transition duration-500
+               md:group-hover:brightness-100 brightness-75"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
@@ -69,7 +70,8 @@ export default function Servicios() {
             <img
               src={facialCard}
               alt="Tratamientos Faciales"
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover transition duration-500
+               md:group-hover:brightness-100 brightness-75"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
@@ -84,7 +86,8 @@ export default function Servicios() {
             <img
               src={corporalCard}
               alt="Tratamientos Corporales"
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover transition duration-500
+               md:group-hover:brightness-100 brightness-75"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
