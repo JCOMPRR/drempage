@@ -36,14 +36,28 @@ export default function SobreMi() {
           </h2>
 
           <p className="mt-6 text-gray-700 leading-relaxed">
-            La Dra. Elise Monserrat Rodriguez Rodriguez es médica general con
-            enfoque en medicina estética. Inició su práctica profesional en
-            tratamientos estéticos tras concluir la Licenciatura en Medicina
-            General, priorizando siempre la seguridad, la ética médica y
-            resultados naturales. <br /> En octubre de 2020, abrió su
-            consultorio de medicina estética en Hermosillo, Sonora, donde brinda
-            atención personalizada y tratamientos diseñados de acuerdo con las
-            necesidades de cada paciente.
+            La Dra. Elise Monserrat Rodríguez Rodríguez es médica general con
+            formación en medicina estética y regenerativa, especializada en el
+            abordaje integral del envejecimiento y la armonización facial y
+            corporal.
+            <br /> <br />
+            Su práctica se fundamenta en diagnóstico médico, criterios
+            anatómicos precisos y protocolos basados en evidencia científica.
+            Cada tratamiento es diseñado de manera personalizada, priorizando
+            seguridad, naturalidad y resultados progresivos que respetan la
+            identidad del paciente. Integra evaluación médica integral, planeación anatómica detallada y
+            tecnología avanzada en cada intervención, garantizando resultados
+            armónicos y sostenibles en el tiempo.
+            <br />
+            Su enfoque combina ciencia, innovación tecnológica y sensibilidad
+            estética para potenciar la belleza individual sin alterar la
+            esencia. Desarrolla planes estratégicos que integran salud cutánea,
+            regeneración tisular y bienestar global, con una filosofía centrada
+            en naturalidad, prevención y regeneración progresiva.
+            <br /> <br />
+            Ejerce en Hermosillo, Sonora, donde dirige su consulta bajo
+            estándares estrictos de ética médica, excelencia clínica y atención
+            personalizada.
           </p>
 
           <div className="mt-6 text-sm text-gray-600">

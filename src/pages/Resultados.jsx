@@ -9,6 +9,12 @@ import corporalMujer from "../assets/corporal-mujer.png";
 
 const categorias = ["Tratamientos Médicos", "Faciales", "Corporales"];
 
+// Recortar las imagenes para la privacidad del paciente en la foto, ejemplo:
+//La primera imagen cortarla del lado derecho hasta que cortemos el labio y Nariz,
+//ya que se enfoca mas en los cachetes y tambien intenetar borrar el arete.
+
+//La segunda y tercera imagen solo cortarle un poco mas de los labios para que no salga tanto la cara
+
 const resultadosData = {
   "Tratamientos Médicos": [
     {
