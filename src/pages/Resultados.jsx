@@ -2,7 +2,7 @@ import { useState } from "react";
 import disminucion1 from "../assets/disminucion-lineas-expresion.webp";
 import disminucion4 from "../assets/disminucion-lineas-expresion-mujer.webp";
 import disminucion5 from "../assets/disminucion-lineas-expresion-dama.webp";
-import facialMujer from "../assets/facial-mujer.webp";
+import facialHombre from "../assets/facial-hombre.webp";
 import facialPlatinoMujer from "../assets/facial-platino-mujer.webp";
 import facialBronceMujer from "../assets/facial-bronce-mujer.webp";
 import corporalMujer from "../assets/corporal-mujer.webp";
@@ -37,7 +37,7 @@ const resultadosData = {
   Faciales: [
     {
       id: 2,
-      image: facialMujer,
+      image: facialHombre,
       label: "Resultado Facial Plata",
     },
     {
