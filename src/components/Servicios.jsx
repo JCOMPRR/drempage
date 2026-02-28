@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-import botoxCard from "../assets/botox-card.jpg";
-import facialCard from "../assets/facial-card.jpg";
-import corporalCard from "../assets/corporal-card.jpg";
+import botoxCard from "../assets/botox-card.webp";
+import facialCard from "../assets/facial-card.webp";
+import corporalCard from "../assets/corporal-card.webp";
 
 export default function Servicios() {
   const ref = useRef(null);

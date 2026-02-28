@@ -1,11 +1,11 @@
 import { useState } from "react";
-import disminucion1 from "../assets/disminucion-lineas-expresion.jpg";
-import disminucion4 from "../assets/disminucion-lineas-expresion-mujer.png";
-import disminucion5 from "../assets/disminucion-lineas-expresion-dama.jpg";
-import facialMujer from "../assets/facial-mujer.png";
-import facialPlatinoMujer from "../assets/facial-platino-mujer.png";
-import facialBronceMujer from "../assets/facial-bronce-mujer.png";
-import corporalMujer from "../assets/corporal-mujer.png";
+import disminucion1 from "../assets/disminucion-lineas-expresion.webp";
+import disminucion4 from "../assets/disminucion-lineas-expresion-mujer.webp";
+import disminucion5 from "../assets/disminucion-lineas-expresion-dama.webp";
+import facialMujer from "../assets/facial-mujer.webp";
+import facialPlatinoMujer from "../assets/facial-platino-mujer.webp";
+import facialBronceMujer from "../assets/facial-bronce-mujer.webp";
+import corporalMujer from "../assets/corporal-mujer.webp";
 
 const categorias = ["Tratamientos Médicos", "Faciales", "Corporales"];
 
@@ -38,12 +38,12 @@ const resultadosData = {
     {
       id: 2,
       image: facialMujer,
-      label: "Resultado Facial Platino",
+      label: "Resultado Facial Plata",
     },
     {
       id: 6,
       image: facialPlatinoMujer,
-      label: "Resultado facial Plata",
+      label: "Resultado facial Platino",
     },
     {
       id: 7,

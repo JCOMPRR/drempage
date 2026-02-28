@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import draElise from "../assets/dra-elise.png";
+import draElise from "../assets/dra-elise.webp";
 
 export default function SobreMi() {
   const ref = useRef(null);
