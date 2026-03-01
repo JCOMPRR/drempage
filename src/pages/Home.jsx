@@ -4,6 +4,7 @@ import Servicios from "../components/Servicios";
 import CTA from "../components/CTA";
 import Podcast from "../components/Podcast";
 import GoogleReviewsCarousel from "../components/GoogleReviewsCarrousel";
+import PromocionBanner from "../components/PromoBanner";
 
 const reviews = [
   {
