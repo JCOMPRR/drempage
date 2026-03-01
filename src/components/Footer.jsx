@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-black text-gray-300 py-12">
@@ -7,6 +9,7 @@ export default function Footer() {
           <h3 className="text-white text-lg font-medium">
             Dra. Elise Monserrat
           </h3>
+
           <p className="mt-2 text-sm">Medicina General</p>
           <p className="text-sm">Universidad del Valle de Mexico</p>
           <p className="text-sm">Cedula Profesional 13645060</p>
@@ -17,6 +20,27 @@ export default function Footer() {
             COFEPRIS 2426012002A00113 <br />
             Consulte a su médico de confianza
           </p>
+
+          {/* LEGALES */}
+          <div className="mt-6">
+            <h4 className="text-white font-medium mb-2">Información Legal</h4>
+
+            <div className="flex flex-col gap-2 text-sm">
+              <Link
+                to="/terminosycondiciones"
+                className="text-[#D4AD45] hover:underline"
+              >
+                Términos y Condiciones
+              </Link>
+
+              <Link
+                to="/politicaCookies"
+                className="text-[#D4AD45] hover:underline"
+              >
+                Política de Cookies
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* UBICACION + REDES */}
@@ -46,7 +70,7 @@ export default function Footer() {
           {/* REDES SOCIALES */}
           <div className="mt-5">
             <h4 className="text-white font-medium mb-2">
-              Siguenos en nuestras Redes Sociales
+              Síguenos en nuestras Redes Sociales
             </h4>
 
             <div className="flex flex-wrap gap-4 text-sm">

@@ -23,6 +23,9 @@ export default function Navbar() {
             <Link to="/resultados" className="hover:text-[#D4AD45] transition">
               Resultados
             </Link>
+            <Link to="/theGlowGuide" className="hover:text-[#D4AD45] transition">
+              The Glow Guide
+            </Link>
             {/* <Link to="/blog" className="hover:text-[#D4AD45] transition">
               Blog
             </Link> */}
