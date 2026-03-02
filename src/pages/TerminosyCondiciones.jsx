@@ -13,7 +13,7 @@ export default function Terminos() {
               1. Aceptación de los Términos
             </h2>
             <p>
-              Al acceder y utilizar este sitio web dremclinic.netlify.app usted
+              Al acceder y utilizar este sitio web dremclinic.com usted
               acepta estos Términos y Condiciones en su totalidad. Si no está de
               acuerdo con alguno de ellos, debe abstenerse de utilizar el sitio.
             </p>

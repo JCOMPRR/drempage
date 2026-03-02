@@ -9,7 +9,7 @@ export default function GoogleReviewsCarousel({ reviews }) {
     let position = 0;
     let isPaused = false;
     const speed = 0.3;
-
+ 
     const animate = () => {
       if (!isPaused) {
         position -= speed;
