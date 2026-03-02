@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function PromocionBanner() {
   // Fecha final de la promocion
-  const fechaFinPromo = new Date("2026-02-28");
+  const fechaFinPromo = new Date("2026-03-28");
   const hoy = new Date();
   const promoActiva = hoy <= fechaFinPromo;
 

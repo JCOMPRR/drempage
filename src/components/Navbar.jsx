@@ -23,7 +23,10 @@ export default function Navbar() {
             <Link to="/resultados" className="hover:text-[#D4AD45] transition">
               Resultados
             </Link>
-            <Link to="/theGlowGuide" className="hover:text-[#D4AD45] transition">
+            <Link
+              to="/theGlowGuide"
+              className="hover:text-[#D4AD45] transition"
+            >
               The Glow Guide
             </Link>
             {/* <Link to="/blog" className="hover:text-[#D4AD45] transition">
@@ -95,6 +98,15 @@ export default function Navbar() {
                   className="block hover:text-[#D4AD45] transition"
                 >
                   Resultados
+                </Link>
+              </li>
+
+              <li className="w-full text-center">
+                <Link
+                  to="/theGlowGuide"
+                  className="block hover:text-[#D4AD45] transition"
+                >
+                  The Glow Guide
                 </Link>
               </li>
 
