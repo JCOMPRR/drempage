@@ -36,18 +36,18 @@ export default function SobreMi() {
           </h2>
 
           <p className="mt-6 text-gray-700 leading-relaxed">
-            La Dra. Elise Monserrat Rodríguez Rodríguez es médica general con
-            formación en medicina estética y regenerativa, especializada en el
-            abordaje integral del envejecimiento y la armonización facial y
-            corporal.
+            La Dra. Elise Monserrat Rodríguez es médica general con formación en
+            medicina estética y regenerativa, especializada en el abordaje
+            integral del envejecimiento y la armonización facial y corporal.
             <br /> <br />
             Su práctica se fundamenta en diagnóstico médico, criterios
             anatómicos precisos y protocolos basados en evidencia científica.
             Cada tratamiento es diseñado de manera personalizada, priorizando
             seguridad, naturalidad y resultados progresivos que respetan la
-            identidad del paciente. Integra evaluación médica integral, planeación anatómica detallada y
-            tecnología avanzada en cada intervención, garantizando resultados
-            armónicos y sostenibles en el tiempo.
+            identidad del paciente. Integra evaluación médica integral,
+            planeación anatómica detallada y tecnología avanzada en cada
+            intervención, garantizando resultados armónicos y sostenibles en el
+            tiempo.
             <br />
             Su enfoque combina ciencia, innovación tecnológica y sensibilidad
             estética para potenciar la belleza individual sin alterar la
