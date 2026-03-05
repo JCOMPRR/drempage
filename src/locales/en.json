@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "inicio": "Home",
+    "servicios": "Services",
+    "resultados": "Results",
+    "glowguide": "The Glow Guide",
+    "agenda": "Book Appointment"
+  },
+  
+  "hero": {
+    "name": "Dr. Elise Monserrat Rodriguez",
+    "subtitle": "Where elegance meets science",
+    "description": "General Medicine, Regenerative Medicine, Anti-aging and Aesthetic Medicine",
+    "button": "Book your appointment"
+  },
+
+  "sobreMi": {
+    "titulo": "Meet Dr. Elise Monserrat",
+    "descripcion": "Dr. Elise Monserrat Rodríguez is a general physician with training in aesthetic and regenerative medicine, specialized in comprehensive anti-aging and facial and body harmonization.\n\nHer practice is based on medical diagnosis, precise anatomical criteria, and evidence-based protocols. Each treatment is designed in a personalized manner, prioritizing safety, natural results, and progressive outcomes that respect the patient's identity. She integrates comprehensive medical evaluation, detailed anatomical planning, and advanced technology in every intervention, ensuring harmonious and sustainable results over time.\n\nHer approach combines science, technological innovation, and aesthetic sensitivity to enhance individual beauty without altering essence. She develops strategic plans that integrate skin health, tissue regeneration, and overall well-being, with a philosophy centered on natural results, prevention, and progressive regeneration.\n\nShe practices in Hermosillo, Sonora, where she leads her clinic under strict standards of medical ethics, clinical excellence, and personalized care.",
+    "cedulaLabel": "Professional License:",
+    "cedulaLink": "View professional license on official SEP portal"
+  },
+
+  "servicios": {
+    "titulo": "Aesthetic Medicine Services",
+    "descripcion": "Explore our wide range of facial treatments, body procedures, and medical protocols designed to enhance your natural beauty and overall well-being.",
+    "protocolos": "Medical Protocols",
+    "faciales": "Facial Treatments",
+    "corporales": "Body Treatments"
+  },
+
+  "reviews": {
+    "titulo": "Patient Reviews",
+    "verMas": "View full profile and verified reviews on Google"
+  },
+
+  "podcast": {
+  "titulo": "Enjoy the Podcast by Dra. Elise Monserrat",
+  "descripcion": "A space where Dra. Elise Monserrat shares clear and responsible information about science, entrepreneurship and wellness. Conversations with experts, tips and insights to grow.",
+  "boton": "Listen on Spotify"
+},
+
+"ctaWhatsapp": {
+  "titulo": "Schedule your personalized medical consultation",
+  "descripcion": "Direct attention via WhatsApp to answer your questions and book your appointment.",
+  "boton": "Book via WhatsApp",
+  "mensaje": "Hello, I would like information and availability to schedule an appointment."
+}
+}

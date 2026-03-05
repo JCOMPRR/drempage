@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import draElise from "../assets/dra-elise.webp";
 
 export default function SobreMi() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,36 +34,17 @@ export default function SobreMi() {
       >
         <div>
           <h2 className="font-heading text-3xl md:text-4xl text-black">
-            Conoce a la Dra. Elise Monserrat{" "}
+            {t("sobreMi.titulo")}
           </h2>
 
-          <p className="mt-6 text-gray-700 leading-relaxed">
-            La Dra. Elise Monserrat Rodríguez es médica general con formación en
-            medicina estética y regenerativa, especializada en el abordaje
-            integral del envejecimiento y la armonización facial y corporal.
-            <br /> <br />
-            Su práctica se fundamenta en diagnóstico médico, criterios
-            anatómicos precisos y protocolos basados en evidencia científica.
-            Cada tratamiento es diseñado de manera personalizada, priorizando
-            seguridad, naturalidad y resultados progresivos que respetan la
-            identidad del paciente. Integra evaluación médica integral,
-            planeación anatómica detallada y tecnología avanzada en cada
-            intervención, garantizando resultados armónicos y sostenibles en el
-            tiempo.
-            <br />
-            Su enfoque combina ciencia, innovación tecnológica y sensibilidad
-            estética para potenciar la belleza individual sin alterar la
-            esencia. Desarrolla planes estratégicos que integran salud cutánea,
-            regeneración tisular y bienestar global, con una filosofía centrada
-            en naturalidad, prevención y regeneración progresiva.
-            <br /> <br />
-            Ejerce en Hermosillo, Sonora, donde dirige su consulta bajo
-            estándares estrictos de ética médica, excelencia clínica y atención
-            personalizada.
+          <p className="mt-6 text-gray-700 leading-relaxed whitespace-pre-line">
+            {t("sobreMi.descripcion")}
           </p>
 
           <div className="mt-6 text-sm text-gray-600">
-            <span className="font-medium text-black">Cédula Profesional:</span>{" "}
+            <span className="font-medium text-black">
+              {t("sobreMi.cedulaLabel")}
+            </span>{" "}
             13645060
           </div>
 
@@ -71,7 +54,7 @@ export default function SobreMi() {
             rel="noopener noreferrer"
             className="inline-block mt-4 text-sm font-medium text-black underline hover:text-[#D4AD45] transition"
           >
-            Ver cédula profesional en portal oficial SEP
+            {t("sobreMi.cedulaLink")}
           </a>
         </div>
 

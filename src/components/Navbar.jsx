@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-drem.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem("lang", lng);
+  };
 
   return (
     <header className="w-full bg-black border-gray-200">
@@ -15,24 +23,37 @@ export default function Navbar() {
 
           <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-white">
             <Link to="/" className="hover:text-[#D4AD45] transition">
-              Inicio
+              {t("navbar.inicio")}
             </Link>
             <Link to="/servicios" className="hover:text-[#D4AD45] transition">
-              Servicios
+              {t("navbar.servicios")}
             </Link>
             <Link to="/resultados" className="hover:text-[#D4AD45] transition">
-              Resultados
+              {t("navbar.resultados")}
             </Link>
             <Link
               to="/theGlowGuide"
               className="hover:text-[#D4AD45] transition"
             >
-              The Glow Guide
+              {t("navbar.glowguide")}
             </Link>
-            {/* <Link to="/blog" className="hover:text-[#D4AD45] transition">
-              Blog
-            </Link> */}
           </ul>
+
+          {/* Botones idioma desktop */}
+          <div className="hidden md:flex items-center gap-3 ml-6">
+            <button
+              onClick={() => changeLanguage("es")}
+              className="text-white text-sm hover:opacity-70"
+            >
+              🇲🇽
+            </button>
+            <button
+              onClick={() => changeLanguage("en")}
+              className="text-white text-sm hover:opacity-70"
+            >
+              🇺🇸
+            </button>
+          </div>
 
           <div className="hidden md:flex">
             <a
@@ -41,7 +62,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="bg-[#D4AD45] text-black px-5 py-2 rounded-md text-sm font-semibold hover:bg-[#B8932F] transition"
             >
-              Agenda Cita
+              {t("navbar.agenda")}
             </a>
           </div>
 
@@ -79,7 +100,7 @@ export default function Navbar() {
             <ul className="flex flex-col items-center gap-6 text-sm font-medium text-white">
               <li className="w-full text-center">
                 <Link to="/" className="block hover:text-[#D4AD45] transition">
-                  Inicio
+                  {t("navbar.inicio")}
                 </Link>
               </li>
 
@@ -88,7 +109,7 @@ export default function Navbar() {
                   to="/servicios"
                   className="block hover:text-[#D4AD45] transition"
                 >
-                  Servicios
+                  {t("navbar.servicios")}
                 </Link>
               </li>
 
@@ -97,7 +118,7 @@ export default function Navbar() {
                   to="/resultados"
                   className="block hover:text-[#D4AD45] transition"
                 >
-                  Resultados
+                  {t("navbar.resultados")}
                 </Link>
               </li>
 
@@ -106,8 +127,23 @@ export default function Navbar() {
                   to="/theGlowGuide"
                   className="block hover:text-[#D4AD45] transition"
                 >
-                  The Glow Guide
+                  {t("navbar.glowguide")}
                 </Link>
+              </li>
+
+              <li className="flex gap-4">
+                <button
+                  onClick={() => changeLanguage("es")}
+                  className="text-white text-lg"
+                >
+                  🇲🇽
+                </button>
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className="text-white text-lg"
+                >
+                  🇺🇸
+                </button>
               </li>
 
               <li className="w-full px-6">
@@ -117,7 +153,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-[#D4AD45] text-black py-3 rounded-full font-semibold hover:bg-[#B8932F] transition"
                 >
-                  Agenda Cita
+                  {t("navbar.agenda")}
                 </a>
               </li>
             </ul>

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import botoxCard from "../assets/botox-card.webp";
 import facialCard from "../assets/facial-card.webp";
@@ -8,6 +9,7 @@ import corporalCard from "../assets/corporal-card.webp";
 export default function Servicios() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,12 +38,10 @@ export default function Servicios() {
       >
         <div className="mb-12 text-center">
           <h2 className="font-heading text-3xl md:text-4xl text-black">
-            Servicios de Medicina Estética
+            {t("servicios.titulo")}
           </h2>
           <p className="mt-4 text-gray-600 text-sm md:text-base">
-            Mira nuestra amplia gama de tratamientos faciales, corporales y
-            protocolos médicos diseñados para realzar tu belleza natural y
-            bienestar integral.
+            {t("servicios.descripcion")}
           </p>
         </div>
 
@@ -52,14 +52,14 @@ export default function Servicios() {
           >
             <img
               src={botoxCard}
-              alt="Protocolos Médicos"
+              alt={t("servicios.protocolos")}
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                md:group-hover:brightness-100 brightness-75"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
-                Protocolos Medicos
+                {t("servicios.protocolos")}
               </h3>
             </div>
           </Link>
@@ -70,31 +70,32 @@ export default function Servicios() {
           >
             <img
               src={facialCard}
-              alt="Tratamientos Faciales"
+              alt={t("servicios.faciales")}
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                md:group-hover:brightness-100 brightness-75"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
-                Faciales
+                {t("servicios.faciales")}
               </h3>
             </div>
           </Link>
+
           <Link
             to="/tratamientosCorporales"
             className="group relative h-80 overflow-hidden rounded-sm block"
           >
             <img
               src={corporalCard}
-              alt="Tratamientos Corporales"
+              alt={t("servicios.corporales")}
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition duration-500
                md:group-hover:brightness-100 brightness-75"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="font-heading text-2xl text-white tracking-wide">
-                Corporales
+                {t("servicios.corporales")}
               </h3>
             </div>
           </Link>

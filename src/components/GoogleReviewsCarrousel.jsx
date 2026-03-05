@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function GoogleReviewsCarousel({ reviews }) {
   const trackRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const track = trackRef.current;
@@ -26,14 +28,12 @@ export default function GoogleReviewsCarousel({ reviews }) {
       animationFrame = requestAnimationFrame(animate);
     };
 
-    // Hover pausa (PC)
     const handleMouseEnter = () => (isPaused = true);
     const handleMouseLeave = () => {
       isPaused = false;
       isDragging = false;
     };
 
-    // Drag PC
     const handleMouseDown = e => {
       isDragging = true;
       isPaused = true;
@@ -53,7 +53,6 @@ export default function GoogleReviewsCarousel({ reviews }) {
       track.style.cursor = "grab";
     };
 
-    // Swipe móvil
     const handleTouchStart = e => {
       isDragging = true;
       isPaused = true;
@@ -102,7 +101,7 @@ export default function GoogleReviewsCarousel({ reviews }) {
     <div className="overflow-hidden w-full py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-semibold text-center mb-10">
-          Opiniones de nuestros pacientes
+          {t("reviews.titulo")}
         </h2>
 
         <div className="relative">
@@ -157,7 +156,7 @@ export default function GoogleReviewsCarousel({ reviews }) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm font-medium text-black hover:underline"
         >
-          Ver perfil completo y opiniones verificadas en Google
+          {t("reviews.verMas")}
         </a>
       </div>
     </div>
