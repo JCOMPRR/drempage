@@ -23,7 +23,7 @@ export default function PromocionBanner() {
     {
       titulo: "Eye Lifting",
       descripcion:
-        "Ultracel en interfaz + Revitalizacion de Ojeras (1ra sesion).",
+        "Ultracel en antifaz + Revitalizacion de Ojeras (1ra sesion).",
       precio: "De $5,400 a $4,800.",
     },
 
@@ -168,8 +168,7 @@ export default function PromocionBanner() {
 
               <p className="text-gray-600">Del 07 al 31 de Marzo</p>
               <p className="text-gray-600">
-                Aparta tu cita con $500, el resto lo pagas en efectivo el día de
-                tu consulta.
+                Aparta tu cita con $500, pago restante solo en efectivo.
               </p>
 
               {/* CARRUSEL */}
