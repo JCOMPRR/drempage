@@ -127,7 +127,7 @@ export default function PromocionBanner() {
       {/* BARRA INFERIOR */}
       <div className="fixed bottom-0 left-0 w-full bg-black text-white py-3 px-6 flex flex-col sm:flex-row items-center justify-between gap-3 z-50 shadow-lg">
         <p className="text-sm text-center sm:text-left">
-          Promoción activa por tiempo limitado.
+          ¡Aprovecha nuestra promoción de Marzo! DREM GLOW TIME
         </p>
 
         <div className="flex gap-3">
