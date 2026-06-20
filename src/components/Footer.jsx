@@ -48,7 +48,7 @@ export default function Footer() {
           <h4 className="text-white font-medium mb-2">Ubicación</h4>
 
           <p className="text-sm leading-relaxed">
-            Av. Tehuantepec 119, El Centenario, 83260
+            Av. Tehuantepec, El Centenario, 83260
             <br />
             Hermosillo, Son.
           </p>
