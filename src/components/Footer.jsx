@@ -48,7 +48,7 @@ export default function Footer() {
           <h4 className="text-white font-medium mb-2">Ubicación</h4>
 
           <p className="text-sm leading-relaxed">
-            Av. Tehuantepec 114, El Centenario, 83260
+            Av. Tehuantepec 100, El Centenario, 83260
             <br />
             Hermosillo, Son.
           </p>
@@ -105,7 +105,7 @@ export default function Footer() {
         </div>
 
         {/* MAPA */}
-        <div>
+        {/* <div>
           <h4 className="text-white font-medium mb-2">Cómo llegar</h4>
 
           <div className="w-full h-48 rounded-xl overflow-hidden border border-white/10">
@@ -118,7 +118,7 @@ export default function Footer() {
               allowFullScreen
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
